@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Dom Api</title>
+    <script type="text/javascript">
+      function Addrow(){
+        var table  = document.getElementById("table");
+       var row = table.insertRow(9);
+
+       var cell1 = row.insertCell(0);
+       var cell2 = row.insertCell(1);
+
+       cell1.innerHTML = "Cel19";
+       cell2.innerHTML = "Cell20";
+      }
+
+    </script>
+  </head>
+  <body>
+    <table id="table" border="1">
+      <tr>
+        <td>cell1</td>
+        <td>cell2</td>
+
+      </tr>
+      <tr>
+        <td>cell3</td>
+        <td>cell4</td>
+      </tr>
+      <tr>
+        <td>cell5</<td>
+        <td>cell6</td>
+        <tr>
+          <td>cell7</td>
+          <td>cell8</td>
+
+        </tr>
+        <tr>
+          <td>cell9</td>
+          <td>cell10</td>
+        </tr>
+        <tr>
+          <td>cell1</td>
+          <td>cell12</td>
+      </tr>
+      <tr>
+        <td>cell13</td>
+        <td>cell14</td>
+
+      </tr>
+      <tr>
+        <td>cell15</td>
+        <td>cell16</td>
+      </tr>
+      <tr>
+        <td>cell17</td>
+        <td>cell18</td>
+        </tr>
+    </table>
+    <br>
+    <input type="button" onclick="Addrow()" value="Add row">
+
+  </body>
+</html>
